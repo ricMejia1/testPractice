@@ -1,243 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Materials Science Study Guide</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #444;
-        }
-        nav a {
-            color: #fff;
-            padding: 14px 20px;
-            text-decoration: none;
-            text-align: center;
-        }
-        nav a:hover {
-            background-color: #555;
-        }
-        .container {
-            padding: 20px;
-        }
-        .quiz {
-            margin-top: 20px;
-        }
-        .question {
-            margin-bottom: 10px;
-        }
-        .result {
-            margin-top: 20px;
-            padding: 10px;
-            background-color: #e0ffe0;
-            border: 1px solid #00aa00;
-        }
-        h2 {
-            border-bottom: 2px solid #444;
-            padding-bottom: 5px;
-        }
-    </style>
+    <meta name="description" content="Farmacia en línea - productos y servicios para su salud">
+    <title>Farmacia Tu Salud</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <h1>Materials Science Study Guide</h1>
+        <div class="logo">
+            <h1>Farmacia Tu Salud</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#ordenar">Ordenar</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <a href="#corrosion">Corrosion</a>
-        <a href="#heat-treatment">Heat Treatment</a>
-        <a href="#steel-numbering">Steel Numbering</a>
-        <a href="#tool-steels">Tool Steels</a>
-        <a href="#iron-carbon">Iron-Carbon Diagram</a>
-        <a href="#quiz">Quiz</a>
-    </nav>
-    <div class="container">
-        <section id="corrosion">
-            <h2>Corrosion</h2>
-            <p><strong>Definition:</strong> Corrosion is the loss of properties or mass due to a chemical reaction with the environment.</p>
-            <p><strong>Active vs. Passive:</strong></p>
-            <ul>
-                <li><strong>Active:</strong> Material is susceptible to corrosion and reacts with the environment.</li>
-                <li><strong>Passive:</strong> Material forms a protective film and resists further corrosion.</li>
-            </ul>
-            <p><strong>Electrochemical Corrosion & Galvanic Cell:</strong></p>
-            <ul>
-                <li><strong>Anode:</strong> Site of oxidation, where metal loses electrons and corrodes.</li>
-                <li><strong>Cathode:</strong> Site of reduction, where metal gains electrons and is protected.</li>
-                <li><strong>Electrolyte:</strong> Conducts ionic current, can be a liquid or another medium.</li>
-                <li><strong>Conditions for Corrosion:</strong> Anode, cathode, electrolyte, electrical path, and potential difference.</li>
-            </ul>
-            <p><strong>Types of Corrosion:</strong></p>
-            <ul>
-                <li><strong>Uniform Corrosion:</strong> Even material loss over a surface.</li>
-                <li><strong>Pitting Corrosion:</strong> Localized corrosion leading to small pits.</li>
-                <li><strong>Galvanic Corrosion:</strong> Occurs when two dissimilar metals are in electrical contact in the presence of an electrolyte.</li>
-                <li><strong>Crevice Corrosion:</strong> Occurs in confined spaces due to stagnant solution.</li>
-                <li><strong>Stress Corrosion Cracking (SCC):</strong> Caused by tensile stress in a corrosive environment, leading to cracking.</li>
-                <li><strong>Intergranular Corrosion:</strong> Occurs along grain boundaries, often due to impurities or segregation.</li>
-                <li><strong>Erosion Corrosion:</strong> Combined chemical and mechanical attack, often accelerated by fluid motion.</li>
-                <li><strong>Dealloying:</strong> Selective leaching of one element from an alloy, such as zinc from brass.</li>
-            </ul>
-            <p><strong>Factors Influencing Corrosion:</strong></p>
-            <ul>
-                <li><strong>Metallurgical Factors:</strong> Grain boundaries, inclusions, local stresses.</li>
-                <li><strong>Environmental Factors:</strong> Temperature, concentration of corrosive agents, aeration, impurities.</li>
-            </ul>
-            <p><strong>Prevention Methods:</strong> Corrosion allowance, coatings, cathodic protection, and selecting appropriate materials.</p>
-        </section>
-        <section id="heat-treatment">
-            <h2>Heat Treatment Processes</h2>
-            <p><strong>Stress Relieving:</strong> Reduces internal stresses caused by welding, machining, or casting without significantly altering mechanical properties.</p>
-            <p><strong>Annealing:</strong> Heat to a specific temperature, then slow cooling. Softens the metal, improves ductility, removes residual stresses.</p>
-            <p><strong>Hardening:</strong> Rapid cooling (quenching) after heating above critical temperature. Results in the formation of martensite, increasing hardness and strength.</p>
-            <p><strong>Tempering:</strong> Reheating after quenching to a lower temperature. Reduces brittleness and increases toughness.</p>
-            <p><strong>Spheroidizing:</strong> Prolonged heating just below the eutectoid temperature, then slow cooling. Softens high carbon steel, improves machinability.</p>
-            <p><strong>Surface Hardening Methods:</strong></p>
-            <ul>
-                <li><strong>Flame Hardening:</strong> Localized heating followed by rapid cooling. Suitable for medium to high carbon steels.</li>
-                <li><strong>Induction Hardening:</strong> Uses electromagnetic induction to heat the surface rapidly, followed by quenching.</li>
-            </ul>
-            <p><strong>Martempering & Austempering:</strong></p>
-            <ul>
-                <li><strong>Martempering:</strong> Quenching in a medium above the martensite start temperature, then cooling to room temperature. Reduces distortion and thermal stresses.</li>
-                <li><strong>Austempering:</strong> Quenching and holding at a temperature above the martensite start, resulting in bainite formation, which provides toughness and strength.</li>
-            </ul>
-        </section>
-        <section id="steel-numbering">
-            <h2>Steel Numbering Systems and Alloying Elements</h2>
-            <p><strong>SAE-AISI Numbering System:</strong></p>
-            <ul>
-                <li><strong>10xx:</strong> Plain carbon steels, the last two digits indicate carbon content in hundredths of a percent (e.g., 1040 has 0.40% carbon).</li>
-                <li><strong>11xx:</strong> Resulfurized steels for improved machinability (e.g., 1144).</li>
-                <li><strong>41xx:</strong> Chromium-molybdenum alloy steels.</li>
-                <li><strong>43xx:</strong> Nickel-chromium-molybdenum alloy steels.</li>
-                <li><strong>52xxx:</strong> Chromium steels.</li>
-            </ul>
-            <p><strong>Prefixes and Suffixes:</strong></p>
-            <ul>
-                <li><strong>"E":</strong> Made in an electric arc furnace.</li>
-                <li><strong>"X":</strong> Modified composition from the standard specification.</li>
-                <li><strong>"H":</strong> Steel will meet hardenability requirements.</li>
-                <li><strong>"B":</strong> Boron is added for improved hardenability.</li>
-                <li><strong>"L":</strong> Lead is added to improve machinability.</li>
-            </ul>
-            <p><strong>Common Alloying Elements and Their Effects:</strong></p>
-            <ul>
-                <li><strong>Carbon (C):</strong> Increases hardness and strength.</li>
-                <li><strong>Manganese (Mn):</strong> Increases hardenability and wear resistance, combines with sulfur to reduce its adverse effects.</li>
-                <li><strong>Chromium (Cr):</strong> Increases hardness, corrosion, and oxidation resistance.</li>
-                <li><strong>Nickel (Ni):</strong> Improves toughness, ductility, and promotes austenitic structure.</li>
-                <li><strong>Molybdenum (Mo):</strong> Increases strength at high temperatures, grain refinement, and hardenability.</li>
-                <li><strong>Silicon (Si):</strong> Improves strength, removes oxygen in steelmaking.</li>
-                <li><strong>Vanadium (V):</strong> Increases strength and grain refinement.</li>
-            </ul>
-        </section>
-        <section id="tool-steels">
-            <h2>Tool Steels</h2>
-            <p><strong>Categories:</strong></p>
-            <ul>
-                <li><strong>High-Speed Steels (HSS):</strong> Retains hardness at high temperatures, used for cutting tools.</li>
-                <li><strong>Cold Work Steels:</strong> Used at room temperature, high wear resistance.</li>
-                <li><strong>Hot Work Steels:</strong> Retains strength and hardness at elevated temperatures, used for dies and molds.</li>
-            </ul>
-            <p><strong>Properties:</strong> High hardness, abrasion resistance, ability to maintain shape at high temperatures.</p>
-            <p><strong>Hardening & Tempering:</strong> Critical to maintain toughness while ensuring hardness for cutting applications.</p>
-            <p><strong>Microstructures:</strong> Understanding the effects of heat treatments on microstructure, such as martensite formation.</p>
-        </section>
-        <section id="iron-carbon">
-            <h2>Iron-Carbon Phase Diagram</h2>
-            <p><strong>Phases:</strong></p>
-            <ul>
-                <li><strong>Ferrite (α):</strong> Soft, ductile phase with low carbon solubility.</li>
-                <li><strong>Austenite (γ):</strong> High-temperature phase, non-magnetic, higher carbon solubility.</li>
-                <li><strong>Cementite (Fe3C):</strong> Hard, brittle phase with high carbon content.</li>
-                <li><strong>Pearlite:</strong> Alternating layers of ferrite and cementite, formed by slow cooling.</li>
-            </ul>
-            <p><strong>Eutectoid Reaction:</strong> At 727°C and 0.8% carbon, austenite transforms into pearlite.</p>
-            <p><strong>Hypoeutectoid Steels:</strong> Less than 0.8% carbon, microstructure consists of ferrite and pearlite.</p>
-            <p><strong>Hypereutectoid Steels:</strong> More than 0.8% carbon, microstructure consists of pearlite and cementite.</p>
-        </section>
-        <section id="quiz">
-            <h2>Quiz</h2>
-            <div class="quiz">
-                <div class="question">
-                    <p>1. What is the primary cause of corrosion?</p>
-                    <input type="radio" name="q1" value="a"> a) Heat treatment<br>
-                    <input type="radio" name="q1" value="b"> b) Reaction with the environment<br>
-                    <input type="radio" name="q1" value="c"> c) Mechanical stress<br>
-                </div>
-                <div class="question">
-                    <p>2. What microstructure is formed in steel after quenching?</p>
-                    <input type="radio" name="q2" value="a"> a) Austenite<br>
-                    <input type="radio" name="q2" value="b"> b) Martensite<br>
-                    <input type="radio" name="q2" value="c"> c) Ferrite<br>
-                </div>
-                <div class="question">
-                    <p>3. Which alloying element increases the toughness and promotes the formation of an austenitic structure?</p>
-                    <input type="radio" name="q3" value="a"> a) Chromium<br>
-                    <input type="radio" name="q3" value="b"> b) Nickel<br>
-                    <input type="radio" name="q3" value="c"> c) Molybdenum<br>
-                </div>
-                <div class="question">
-                    <p>4. What is the purpose of spheroidizing heat treatment?</p>
-                    <input type="radio" name="q4" value="a"> a) Increase hardness<br>
-                    <input type="radio" name="q4" value="b"> b) Improve machinability<br>
-                    <input type="radio" name="q4" value="c"> c) Reduce internal stresses<br>
-                </div>
-                <button onclick="checkAnswers()">Submit</button>
-                <div class="result" id="result"></div>
+
+    <!-- Home Section -->
+    <section id="inicio">
+        <h2>Bienvenido a Farmacia Tu Salud</h2>
+        <p>Tu bienestar es nuestra prioridad. Descubre nuestros productos y servicios farmacéuticos.</p>
+        <img src="pharmacy.jpg" alt="Imagen de farmacia">
+    </section>
+
+    <!-- Products Section -->
+    <section id="productos">
+        <h2>Productos</h2>
+        <div class="productos-grid">
+            <div class="producto">
+                <h3>Medicamentos</h3>
+                <p>Variedad de medicamentos de venta libre y bajo receta.</p>
             </div>
-        </section>
-    </div>
-    <script>
-        function checkAnswers() {
-            var score = 0;
-            var totalQuestions = 4;
+            <div class="producto">
+                <h3>Vitaminas y Suplementos</h3>
+                <p>Cuida tu salud con nuestros suplementos y vitaminas.</p>
+            </div>
+            <div class="producto">
+                <h3>Productos de Belleza</h3>
+                <p>Encuentra productos para el cuidado de la piel y el cabello.</p>
+            </div>
+        </div>
+    </section>
 
-            var q1 = document.getElementsByName('q1');
-            for (var i = 0; i < q1.length; i++) {
-                if (q1[i].checked && q1[i].value === 'b') {
-                    score++;
-                }
-            }
+    <!-- Services Section -->
+    <section id="servicios">
+        <h2>Servicios</h2>
+        <ul>
+            <li>Recetas Médicas</li>
+            <li>Entrega a Domicilio</li>
+            <li>Consulta Farmacéutica</li>
+            <li>Vacunación</li>
+            <li>Análisis de Salud</li>
+        </ul>
+    </section>
 
-            var q2 = document.getElementsByName('q2');
-            for (var i = 0; i < q2.length; i++) {
-                if (q2[i].checked && q2[i].value === 'b') {
-                    score++;
-                }
-            }
+    <!-- Contact Section -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Teléfono: +123 456 789</p>
+        <p>Correo: contacto@farmaciatusalud.com</p>
+        <p>Dirección: Calle Principal 123, Ciudad, País</p>
+        <p>Horario: Lunes a Viernes, 9 AM - 8 PM</p>
+    </section>
 
-            var q3 = document.getElementsByName('q3');
-            for (var i = 0; i < q3.length; i++) {
-                if (q3[i].checked && q3[i].value === 'b') {
-                    score++;
-                }
-            }
+    <!-- Order Form Section -->
+    <section id="ordenar">
+        <h2>Ordenar Productos</h2>
+        <form id="orderForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
 
-            var q4 = document.getElementsByName('q4');
-            for (var i = 0; i < q4.length; i++) {
-                if (q4[i].checked && q4[i].value === 'b') {
-                    score++;
-                }
-            }
+            <label for="producto">Producto que deseas ordenar:</label>
+            <input type="text" id="producto" name="producto" required>
 
-            var result = document.getElementById('result');
-            result.textContent = "You scored " + score + " out of " + totalQuestions + "!";
-        }
-    </script>
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" name="cantidad" min="1" required>
+
+            <label for="telefono">Teléfono de Contacto:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <button type="submit">Enviar Pedido</button>
+        </form>
+
+        <p id="confirmation" style="display:none;">¡Pedido recibido! Puedes pagar en nuestra farmacia al recoger.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Farmacia Tu Salud - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
