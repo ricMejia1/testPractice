@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Farmacia Tu Salud - Productos y servicios farmacéuticos en línea">
+    <meta name="description" content="Farmacia Tu Salud - Productos y Servicios Farmacéuticos">
     <title>Farmacia Tu Salud</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!-- Header with navigation -->
+    <!-- Header -->
     <header>
         <div class="logo">
             <h1>Farmacia Tu Salud</h1>
@@ -19,23 +19,25 @@
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#productos">Productos</a></li>
                 <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#nosotros">Sobre Nosotros</a></li>
+                <li><a href="#promociones">Promociones</a></li>
                 <li><a href="#contacto">Contacto</a></li>
                 <li><a href="#ordenar">Ordenar</a></li>
+                <li><a href="#cuenta">Mi Cuenta</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Hero Section with Banner -->
+    <!-- Home Section -->
     <section id="inicio" class="hero-section">
         <div class="hero-text">
             <h2>Bienvenido a Farmacia Tu Salud</h2>
-            <p>Encuentra los mejores productos y servicios para cuidar tu salud.</p>
+            <p>Tu salud es nuestra prioridad.</p>
             <a href="#productos" class="btn-hero">Ver Productos</a>
         </div>
     </section>
 
-    <!-- Products Section with grid layout -->
+    <!-- Products Section -->
     <section id="productos" class="section">
         <h2>Nuestros Productos</h2>
         <div class="productos-grid">
@@ -50,16 +52,16 @@
                 <p>Mejora tu bienestar con nuestras vitaminas.</p>
             </div>
             <div class="producto-card">
-                <img src="belleza.jpg" alt="Belleza">
+                <img src="belleza.jpg" alt="Productos de Belleza">
                 <h3>Productos de Belleza</h3>
-                <p>Cuida tu piel y tu cabello con nuestra selección.</p>
+                <p>Cuida tu piel con nuestra selección.</p>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
     <section id="servicios" class="section">
-        <h2>Servicios que Ofrecemos</h2>
+        <h2>Nuestros Servicios</h2>
         <div class="servicios-list">
             <div class="servicio-item">
                 <i class="fas fa-prescription-bottle-alt"></i>
@@ -79,21 +81,23 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonios" class="section">
-        <h2>Lo que dicen nuestros clientes</h2>
-        <div class="testimonios-carousel">
-            <div class="testimonio">
-                <p>"Excelente servicio y entrega rápida. Los mejores precios en medicamentos."</p>
-                <h4>- María G.</h4>
+    <!-- About Us Section -->
+    <section id="nosotros" class="section">
+        <h2>Sobre Nosotros</h2>
+        <p>Somos una farmacia con más de 20 años de experiencia en el cuidado de la salud. Nuestro equipo de profesionales está aquí para brindarte el mejor servicio.</p>
+    </section>
+
+    <!-- Promotions Section -->
+    <section id="promociones" class="section">
+        <h2>Promociones Especiales</h2>
+        <div class="promociones-grid">
+            <div class="promocion-item">
+                <h3>Descuento del 20% en Vitaminas</h3>
+                <p>Disponible hasta el 31 de octubre</p>
             </div>
-            <div class="testimonio">
-                <p>"La consulta farmacéutica fue muy útil, resolvieron todas mis dudas."</p>
-                <h4>- Pedro L.</h4>
-            </div>
-            <div class="testimonio">
-                <p>"La mejor farmacia online, ¡gran selección de productos de belleza!"</p>
-                <h4>- Lucía F.</h4>
+            <div class="promocion-item">
+                <h3>Oferta en Productos de Belleza</h3>
+                <p>Compre 2 y obtenga 1 gratis</p>
             </div>
         </div>
     </section>
@@ -104,11 +108,15 @@
         <p>Teléfono: +123 456 789 | Correo: contacto@farmaciatusalud.com</p>
         <p>Dirección: Calle Principal 123, Ciudad, País</p>
         <p>Horario: Lunes a Viernes, 9 AM - 8 PM</p>
+        <!-- Embedded Map -->
+        <div class="map">
+            <iframe src="https://maps.google.com/maps?q=Calle%20Principal%20123&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+        </div>
     </section>
 
-    <!-- Order Section with Modal -->
+    <!-- Order Section -->
     <section id="ordenar" class="section">
-        <h2>Realiza tu Pedido</h2>
+        <h2>Ordenar Productos</h2>
         <form id="orderForm">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required>
@@ -132,6 +140,13 @@
                 <p>¡Pedido recibido! Puedes pagar en nuestra farmacia al recoger.</p>
             </div>
         </div>
+    </section>
+
+    <!-- Account Section -->
+    <section id="cuenta" class="section">
+        <h2>Mi Cuenta</h2>
+        <p>Inicia sesión para ver tu historial de compras o actualizar tu perfil.</p>
+        <button class="btn-login">Iniciar Sesión</button>
     </section>
 
     <!-- Footer -->
