@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Farmacia Tu Salud - Productos y Servicios Farmacéuticos">
-    <title>Farmacia Tu Salud</title>
+    <title>Farmacia Tu Salud - Inicio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -16,137 +16,25 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#nosotros">Sobre Nosotros</a></li>
-                <li><a href="#promociones">Promociones</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-                <li><a href="#ordenar">Ordenar</a></li>
-                <li><a href="#cuenta">Mi Cuenta</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="promociones.html">Promociones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="ordenar.html">Ordenar</a></li>
+                <li><a href="cuenta.html">Mi Cuenta</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Home Section -->
+    <!-- Hero Section -->
     <section id="inicio" class="hero-section">
         <div class="hero-text">
             <h2>Bienvenido a Farmacia Tu Salud</h2>
             <p>Tu salud es nuestra prioridad.</p>
-            <a href="#productos" class="btn-hero">Ver Productos</a>
+            <a href="productos.html" class="btn-hero">Ver Productos</a>
         </div>
-    </section>
-
-    <!-- Products Section -->
-    <section id="productos" class="section">
-        <h2>Nuestros Productos</h2>
-        <div class="productos-grid">
-            <div class="producto-card">
-                <img src="medicamento.jpg" alt="Medicamentos">
-                <h3>Medicamentos</h3>
-                <p>Gran variedad de medicamentos de alta calidad.</p>
-            </div>
-            <div class="producto-card">
-                <img src="vitaminas.jpg" alt="Vitaminas">
-                <h3>Vitaminas y Suplementos</h3>
-                <p>Mejora tu bienestar con nuestras vitaminas.</p>
-            </div>
-            <div class="producto-card">
-                <img src="belleza.jpg" alt="Productos de Belleza">
-                <h3>Productos de Belleza</h3>
-                <p>Cuida tu piel con nuestra selección.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="servicios" class="section">
-        <h2>Nuestros Servicios</h2>
-        <div class="servicios-list">
-            <div class="servicio-item">
-                <i class="fas fa-prescription-bottle-alt"></i>
-                <h3>Recetas Médicas</h3>
-                <p>Rellena tus recetas de manera rápida y sencilla.</p>
-            </div>
-            <div class="servicio-item">
-                <i class="fas fa-truck"></i>
-                <h3>Entrega a Domicilio</h3>
-                <p>Recibe tus medicamentos en la comodidad de tu hogar.</p>
-            </div>
-            <div class="servicio-item">
-                <i class="fas fa-syringe"></i>
-                <h3>Vacunación</h3>
-                <p>Protege a tu familia con nuestro servicio de vacunación.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Us Section -->
-    <section id="nosotros" class="section">
-        <h2>Sobre Nosotros</h2>
-        <p>Somos una farmacia con más de 20 años de experiencia en el cuidado de la salud. Nuestro equipo de profesionales está aquí para brindarte el mejor servicio.</p>
-    </section>
-
-    <!-- Promotions Section -->
-    <section id="promociones" class="section">
-        <h2>Promociones Especiales</h2>
-        <div class="promociones-grid">
-            <div class="promocion-item">
-                <h3>Descuento del 20% en Vitaminas</h3>
-                <p>Disponible hasta el 31 de octubre</p>
-            </div>
-            <div class="promocion-item">
-                <h3>Oferta en Productos de Belleza</h3>
-                <p>Compre 2 y obtenga 1 gratis</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contacto" class="section">
-        <h2>Contacto</h2>
-        <p>Teléfono: +123 456 789 | Correo: contacto@farmaciatusalud.com</p>
-        <p>Dirección: Calle Principal 123, Ciudad, País</p>
-        <p>Horario: Lunes a Viernes, 9 AM - 8 PM</p>
-        <!-- Embedded Map -->
-        <div class="map">
-            <iframe src="https://maps.google.com/maps?q=Calle%20Principal%20123&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
-        </div>
-    </section>
-
-    <!-- Order Section -->
-    <section id="ordenar" class="section">
-        <h2>Ordenar Productos</h2>
-        <form id="orderForm">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-
-            <label for="producto">Producto que deseas ordenar:</label>
-            <input type="text" id="producto" name="producto" required>
-
-            <label for="cantidad">Cantidad:</label>
-            <input type="number" id="cantidad" name="cantidad" min="1" required>
-
-            <label for="telefono">Teléfono de Contacto:</label>
-            <input type="tel" id="telefono" name="telefono" required>
-
-            <button type="submit">Enviar Pedido</button>
-        </form>
-
-        <!-- Modal Confirmation -->
-        <div id="confirmationModal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>¡Pedido recibido! Puedes pagar en nuestra farmacia al recoger.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Account Section -->
-    <section id="cuenta" class="section">
-        <h2>Mi Cuenta</h2>
-        <p>Inicia sesión para ver tu historial de compras o actualizar tu perfil.</p>
-        <button class="btn-login">Iniciar Sesión</button>
     </section>
 
     <!-- Footer -->
@@ -154,6 +42,5 @@
         <p>© 2024 Farmacia Tu Salud - Todos los derechos reservados</p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
